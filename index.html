@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tegar Ridwansyah - Data Scientist and Machine Learning Specialist</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" href="img/undraw_male_avatar_g98d.svg">
+    <style>
+        /* Custom CSS for line display */
+        .line-display {
+          border-left: 2px solid #002EB5;
+          padding-left: 10px; /* Adjust padding as needed */
+          margin-left: 15px;
+        }
+
+        .full-height-section {
+            height: 100vh; /* Set height to 100% of viewport height */
+            overflow-y: auto; /* Enable vertical scrolling */
+        }
+
+        .holds-the-iframe {
+            background:url(img/loader.gif) center center no-repeat;
+        }
+    </style>    
+  </head>
+  <body style="font-family: sans-serif;">
+    <div class="container-fluid full-height-section">
+        <div class="row h-100">
+            <div class="col-4 text-center align-self-center">
+                <img src="img/undraw_male_avatar_g98d.svg" class="rounded mx-auto d-block" width="200px" style="margin-bottom: 15px;">
+                <p>
+                    <b>Tegar Ridwansyah</b><br>
+                    Mathematics Student at Universitas Padjadjaran
+                </p>
+            </div>
+            <div class="col align-self-center">
+                <p>
+                    <h5 style="color: #002EB5;"><b>About Me</b></h5>
+                    Final year mathematics student who is passionate about Machine Learning and Data Science. Experienced in data science and machine
+                    learning through internship as a Data Scientist. Dream of becoming a Senior Data Scientist or Machine Learning Specialist and studying
+                    for a master's degree in data science abroad.
+                    <br><br>
+                    <a href="https://www.linkedin.com/in/tegar-ridwansyah/" target="_blank" class="icon-link" style="color: inherit; text-decoration: none;">
+                        <i class="bi bi-linkedin" style="font-size: 25px; margin-right: 5px;"></i>
+                    </a>
+                    <a href="https://github.com/tegarridwansyah/" target="_blank" class="icon-link" style="color: inherit; text-decoration: none;">
+                        <i class="bi bi-github" style="font-size: 25px; margin-right: 5px;"></i>
+                    </a>
+                    <a href="mailto:tegar.ridwan7@gmail.com" target="_blank" class="icon-link" style="color: inherit; text-decoration: none;">
+                        <i class="bi bi-envelope-fill" style="font-size: 25px;"></i>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <h5 style="color: #002EB5;"><b>Experiences</b></h5>
+            <div class="line-display">
+                <p>
+                    <b style="font-size: larger;">Data Scientist (Internship)</b><br>
+                    <b>Telkomsel</b><br>
+                    August 2023 - December 2023<br>
+                    Analyzed a brand coffee company survey to get insights using Python and created storytelling visualization in PowerPoint. 
+                    Developed pipeline code to provide insight from geospatial data using Pyspark. 
+                    Created POI hybrid system recommendation for 1000+ customers and provided top 10 POI recommendation.
+                </p>
+                <p>
+                    <b style="font-size: larger;">Laboratory Assistant</b><br>
+                    <b>Departemen Matematika FMIPA Unpad</b><br>
+                    February 2022 - December 2023<br>
+                    Become coordinators and taught practicum classes in C++ and Python for Database, Elementary Linear Algebra, Numerical Methods, Data Structures, Model and Simulations, Computational Mathematics, and Optimization for an average of 20 students per class. 
+                    Contributed to creating a MOOC module for Elementary Linear Algebra on Unpad Luhung. 
+                    Become part of the publication division and design publication information on the Laboratory Assistant's social media and manage the Laboratory Assistant's website.
+                </p>
+                <p>
+                    <b style="font-size: larger;">Machine Learning Cohort (Independent Study Kampus Merdeka)</b><br>
+                    <b>Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka</b><br>
+                    February 2023 - July 2023<br>
+                    Learned regarding machine learning from basic including an introduction to machine learning, pre-processing data, creating a machine learning model for data text and image, and how to deploy the model using TensorFlow. 
+                    Worked in project group creating a application for facial skin disease problem detection.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row" style="margin-top: 50px;">
+            <h5 class="text-center" style="margin-bottom: 25px; color: #002EB5;"><b>Portfolio</b></h5>
+            <div class="col-4">
+                <select class="form-select" id="project-select">
+                    <option selected disabled>Choose Project</option>
+                    <option disabled>- Data Science -</option>
+                    <option value="ds1">1. Performance Analysis in Stroke Prediction</option>
+                    <option value="ds2">2. FacialBot</option>
+                    <option disabled>- Visualization -</option>
+                    <option value="img/ig_astlab.jpg">1. Laboratory Assistant's Instagram</option>
+                    <option value="v2">2. Infographic</option>
+                    <option disabled>- Programming -</option>
+                    <option value="img/0330.gif">1. Crazy Rich Poly</option>
+                    <option value="img/0330(1).gif">2. Maze: U's Exit Plan</option>
+                </select>
+                <p style="margin-top: 15px;">
+                    <h5><b id="title_project">Title</b></h5>
+                    <p id="desc_project">
+                        Description
+                    </p>
+                </p>
+            </div>
+            <div class="col-8">
+                <div id="project-content" class="text-center">
+                    <img id="project-image" src="img/undraw_undraw_undraw_undraw_undraw_undraw_undraw_undraw_undraw_search_engines_041x_-2-_cl95_o7o8_pigd_-1-_wbm3_t5p8_-1-_mt5l_-2-_dhxr_-2-_nmxe.svg" class="rounded mx-auto d-block" width="60%" height="500px">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="margin-top: 50px;">
+        <hr>
+        <div class="row text-center">
+            <span class="bi bi-c-circle"> 2024 Tegar Ridwansyah</span>
+            <p>All Rights Reserved</p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+  <script>
+    // Get references to the select element and content container
+    const selectElement = document.getElementById('project-select');
+    const contentContainer = document.getElementById('project-content');
+    const titleProject = document.getElementById('title_project');
+    const descProject = document.getElementById('desc_project');
+
+    // Add event listener to the select element to detect changes
+    selectElement.addEventListener('change', function() {
+        // Get the selected option value
+        const selectedOptionValue = selectElement.value;
+        
+        switch(selectedOptionValue) {
+            case 'ds1':
+                titleProject.innerHTML = 'Performance Analysis of Machine Learning Approaches in Stroke Prediction';
+                descProject.innerHTML = `This is a dummy project as an exercise in analyzing the performance of machine learning models. The process is referenced to a paper. There are differences in the process used, I added oversampling techniques to handle the problem of unbalanced datasets. The results obtained also increased from the initial 97% accuracy to 99%.
+                                        <br><br>
+                                        <a href="https://github.com/tegarridwansyah/Performance-Analysis-of-Machine-Learning-Approaches-in-Stroke-Prediction" target="_blank" class="icon-link" style="color: inherit; text-decoration: none;">
+                                            <i class="bi bi-github" style="font-size: 25px; margin-right: 5px;"></i>
+                                        </a>`;
+                contentContainer.innerHTML = `<div class="holds-the-iframe"><iframe src="https://mailunpadac-my.sharepoint.com/personal/tegar20001_mail_unpad_ac_id/_layouts/15/Doc.aspx?sourcedoc={b0cd16af-b2f9-4831-9d70-f475664150a2}&amp;action=embedview&amp;wdAr=1.7777777777777777&amp;wdEaaCheck=1" width="100%" height="500px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe></div>`;
+                break;
+            case 'ds2':
+                titleProject.innerHTML = 'FacialBot';
+                descProject.innerHTML = `Application to detect skin diseases on the face, such as acne, eczema, and others using object detection with the help of TensorFlow.
+                                        <br><br>
+                                        <a href="https://github.com/tegarridwansyah/-ML-FacialBot-Bangkit" target="_blank" class="icon-link" style="color: inherit; text-decoration: none;">
+                                            <i class="bi bi-github" style="font-size: 25px; margin-right: 5px;"></i>
+                                        </a>`;
+                contentContainer.innerHTML = `<div class="holds-the-iframe"><iframe src="https://mailunpadac-my.sharepoint.com/personal/tegar20001_mail_unpad_ac_id/_layouts/15/Doc.aspx?sourcedoc={6e800e53-581f-4f0a-a518-af968d286d4d}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="100%" height="500px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe></div>`;
+                break;
+            case 'img/ig_astlab.jpg':
+                titleProject.innerHTML = 'Laboratory Assistant\'s Instagram Feeds';
+                descProject.innerHTML = `I designed laboratory assistant instagram feeds to provide practicum information and open recruitment of new laboratory assistants.
+                                        <br><br>
+                                        <a href="https://www.instagram.com/astlabmatematikaunpad/" target="_blank" class="icon-link" style="color: inherit; text-decoration: none;">
+                                            <i class="bi bi-instagram" style="font-size: 25px; margin-right: 5px;"></i>
+                                        </a>`;
+                contentContainer.innerHTML = `<img src="${selectedOptionValue}" class="rounded mx-auto d-block" height="500px">`;
+                break;
+            case 'img/0330.gif':
+                titleProject.innerHTML = 'Crazy Rich Poly';
+                descProject.innerHTML = `Crazy Rich Poly is a game adapted from a real-world monopoly game created using the C++ programming language.
+                                            <br><br>
+                                            <a href="https://github.com/tegarridwansyah/CPP-Games" target="_blank" class="icon-link" style="color: inherit; text-decoration: none;">
+                                                <i class="bi bi-github" style="font-size: 25px; margin-right: 5px;"></i>
+                                            </a>`;
+                contentContainer.innerHTML = `<img src="${selectedOptionValue}" class="rounded mx-auto d-block" height="500px">`;
+                break;
+            case 'img/0330(1).gif':
+                titleProject.innerHTML = 'Maze: U\'s Exit Plan';
+                descProject.innerHTML = `Maze: U's Exit Plan is an adventure genre game that tells the story of a character U trapped in a maze. The labyrinth has many obstacles that he must face. Not only that, in it there are three destinations that you must pass. U must be able to pass all the destinations and obstacles in order to get out of the maze.
+                                            <br><br>
+                                            <a href="https://github.com/tegarridwansyah/CPP-Games" target="_blank" class="icon-link" style="color: inherit; text-decoration: none;">
+                                                <i class="bi bi-github" style="font-size: 25px; margin-right: 5px;"></i>
+                                            </a>`;
+                contentContainer.innerHTML = `<img src="${selectedOptionValue}" class="rounded mx-auto d-block" height="500px">`;
+                break;
+            case 'v2':
+                titleProject.innerHTML = 'Infographic';
+                descProject.innerHTML = 'I created infographics on Amazon SageMaker, Geospatial Data and Analytics, and a simple implementation of Flask on LinkedIn.';
+                contentContainer.innerHTML = `<div class="container">
+                                            <div class="row justify-content-center">
+                                                <div class="col-md-6">
+                                                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" style="max-width: fit-content;">
+                                                        <div class="carousel-inner">
+                                                            <div class="carousel-item active">
+                                                                <img src="img/September - Tegar.png" class="d-block" alt="..." height="500px">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="img/Oktober - Tegar.png" class="d-block" alt="..." height="500px">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="img/November - Tegar.png" class="d-block" alt="..." height="500px">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="img/Desember - Tegar.png" class="d-block" alt="..." height="500px">
+                                                            </div>
+                                                        </div>
+                                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                            <span class="visually-hidden">Previous</span>
+                                                        </button>
+                                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                            <span class="visually-hidden">Next</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>`
+                break;
+        }        
+    });
+  </script>
+</html>
